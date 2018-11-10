@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		pi = GetComponent<PlayerInformations>();
 		ps = GetComponent<PlayerSounds>();
+		an = transform.Find("New Sprite").GetComponent<Animator>();
+		sr = transform.Find("New Sprite").GetComponent<SpriteRenderer>();
 		originalPosition = transform.position;
 		Init();
 	}
@@ -45,6 +47,8 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	float t = 0.0f;
+
 	private void FixedUpdate()
 	{
 		if (pi.Alive == false)
@@ -58,6 +62,17 @@ public class PlayerController : MonoBehaviour
 		}
 
 		float horizontalMovement = Input.GetAxis("Horizontal");
+
+
+
+		if (horizontalMovement < -0.1f)
+		{
+			sr.flipX = true;
+		}
+		else if (horizontalMovement > 0.1f)
+		{
+			sr.flipX = false;
+		}
 
 		speed = Time.fixedDeltaTime * horizontalMovement * Speed;
 
@@ -73,6 +88,10 @@ public class PlayerController : MonoBehaviour
 		velocity.x = speed;
 
 		rb.velocity = velocity;
+		an.SetFloat("velocity", Mathf.Abs(horizontalMovement));
+		an.SetBool("jumping", jumping);
+		an.SetFloat("jumpVelocity", rb.velocity.y);
+		t = horizontalMovement;
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -101,4 +120,7 @@ public class PlayerController : MonoBehaviour
 	private Vector2 velocity = new Vector2();
 	private bool jumping = false;
 	private Vector3 originalPosition;
+
+	private Animator an;
+	private SpriteRenderer sr;
 }

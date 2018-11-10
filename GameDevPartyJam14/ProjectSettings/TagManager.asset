@@ -7,6 +7,9 @@ TagManager:
   - TopCollider
   - BottomCollider
   - Trap
+  - Trigger
+  - Spline
+  - StopTrigger
   layers:
   - Default
   - TransparentFX
