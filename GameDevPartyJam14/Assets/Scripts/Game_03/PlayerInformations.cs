@@ -28,6 +28,19 @@ public class PlayerInformations : MonoBehaviour
 		}
 	}
 
+	public float DeathCounter
+	{
+		get
+		{
+			return deathCounter;
+		}
+		set
+		{
+			deathCounter = value;
+		}
+	}
+
 	private bool alive = true;
 	private bool canMove = false;
+	private float deathCounter = 3.0f;
 }

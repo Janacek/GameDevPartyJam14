@@ -30,6 +30,12 @@ public class PlayerController : MonoBehaviour
 	{
 		if (pi.Alive == false)
 		{
+			pi.DeathCounter -= Time.deltaTime;
+			if (pi.DeathCounter <= 0.0f)
+			{
+				pi.DeathCounter = 3.0f;
+				Init();
+			}
 			return;
 		}
 
@@ -41,7 +47,12 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		if (pi.Alive == false || pi.CanMove == false)
+		if (pi.Alive == false)
+		{
+			return;
+		}
+
+		if (pi.CanMove == false)
 		{
 			return;
 		}
@@ -75,7 +86,6 @@ public class PlayerController : MonoBehaviour
 			pi.Alive = false;
 			pi.CanMove = false;
 			ps.PlayOneShot(0); // DEATH
-			Init();
 		}
 		else if (collision.collider.tag == "BottomCollider")
 		{
