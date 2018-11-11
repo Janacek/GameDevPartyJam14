@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 7d362692b48bf4249989428e33530182
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ambientLight1
+    100002: dents_droite
+    100004: dents_gauche
+    100006: dents_gauche_op
+    100008: directionalLight1
+    100010: glotte
+    100012: langue
+    100014: molaire_grande
+    100016: molaire_grande1
+    100018: molaire_grande1 1
+    100020: molaire_grande2
+    100022: molaire_grande2 1
+    100024: molaire_grande3
+    100026: molaire_grande3 1
+    100028: molaire_grande4
+    100030: molaire_grande4 1
+    100032: molaire_op
+    100034: molaire_op1
+    100036: molaire_op2
+    100038: molaire_op3
+    100040: molaire_petite
+    100042: ovule
+    100044: palais
+    100046: persp1
+    100048: rendercam
+    100050: rendercam1
+    100052: rendercam2
+    100054: rotatez
+    100056: //RootNode
+    100058: "spermatozo\xEFde"
+    400000: ambientLight1
+    400002: dents_droite
+    400004: dents_gauche
+    400006: dents_gauche_op
+    400008: directionalLight1
+    400010: glotte
+    400012: langue
+    400014: molaire_grande
+    400016: molaire_grande1
+    400018: molaire_grande1 1
+    400020: molaire_grande2
+    400022: molaire_grande2 1
+    400024: molaire_grande3
+    400026: molaire_grande3 1
+    400028: molaire_grande4
+    400030: molaire_grande4 1
+    400032: molaire_op
+    400034: molaire_op1
+    400036: molaire_op2
+    400038: molaire_op3
+    400040: molaire_petite
+    400042: ovule
+    400044: palais
+    400046: persp1
+    400048: rendercam
+    400050: rendercam1
+    400052: rendercam2
+    400054: rotatez
+    400056: //RootNode
+    400058: "spermatozo\xEFde"
+    2000000: persp1
+    2000002: rendercam
+    2000004: rendercam1
+    2000006: rendercam2
+    2100000: glow_sprem
+    2100002: lambert1
+    2100004: chair
+    2100006: chair1
+    2300000: glotte
+    2300002: langue
+    2300004: molaire_grande
+    2300006: molaire_grande1
+    2300008: molaire_grande1 1
+    2300010: molaire_grande2
+    2300012: molaire_grande2 1
+    2300014: molaire_grande3
+    2300016: molaire_grande3 1
+    2300018: molaire_grande4
+    2300020: molaire_grande4 1
+    2300022: molaire_op
+    2300024: molaire_op1
+    2300026: molaire_op2
+    2300028: molaire_op3
+    2300030: molaire_petite
+    2300032: ovule
+    2300034: palais
+    2300036: "spermatozo\xEFde"
+    3300000: glotte
+    3300002: langue
+    3300004: molaire_grande
+    3300006: molaire_grande1
+    3300008: molaire_grande1 1
+    3300010: molaire_grande2
+    3300012: molaire_grande2 1
+    3300014: molaire_grande3
+    3300016: molaire_grande3 1
+    3300018: molaire_grande4
+    3300020: molaire_grande4 1
+    3300022: molaire_op
+    3300024: molaire_op1
+    3300026: molaire_op2
+    3300028: molaire_op3
+    3300030: molaire_petite
+    3300032: ovule
+    3300034: palais
+    3300036: "spermatozo\xEFde"
+    4300000: "spermatozo\xEFde"
+    4300002: molaire_petite
+    4300004: palais
+    4300006: glotte
+    4300008: langue
+    4300010: molaire_grande
+    4300012: molaire_grande1
+    4300014: molaire_grande2
+    4300016: molaire_grande3
+    4300018: molaire_grande4
+    4300020: molaire_grande1
+    4300022: molaire_grande2
+    4300024: molaire_grande3
+    4300026: molaire_grande4
+    4300028: molaire_op
+    4300030: molaire_op1
+    4300032: molaire_op2
+    4300034: molaire_op3
+    4300036: ovule
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: ambientLight1
+    10800002: directionalLight1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

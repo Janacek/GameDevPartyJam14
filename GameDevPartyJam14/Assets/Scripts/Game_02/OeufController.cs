@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OeufController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class OeufController : MonoBehaviour
 		lc = GameObject.Find("Line").GetComponent<LineController>();
 	}
 
+	float t = 0.0F;
+
 	void Update()
 	{
 		if (endTimer > 0.0f)
@@ -25,6 +28,16 @@ public class OeufController : MonoBehaviour
 		{
 			GetComponent<CircleCollider2D>().enabled = false;
 			Sortie.SetActive(true);
+		}
+
+		if (t > 0.0f)
+		{
+			t -= Time.deltaTime;
+			if (t < 0.0f)
+			{
+				SceneManager.LoadScene("Game_03");
+
+			}
 		}
 
 			if (oi.CanThrow)
@@ -86,6 +99,7 @@ public class OeufController : MonoBehaviour
 		oi.CanThrow = false;
 		endTimer = 3.0f;
 		Entree.SetActive(true);
+		t = 4.5f;
 	}
 
 	Rigidbody2D rb;

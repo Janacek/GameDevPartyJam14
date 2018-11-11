@@ -10,7 +10,7 @@ public class DentManager : MonoBehaviour
 	void Start()
 	{
 		dents = new List<GameObject>();
-		timer = 5.0f;
+		timer = 3.0f;
 	}
 
 	void Update()
@@ -19,7 +19,7 @@ public class DentManager : MonoBehaviour
 
 		if (timer <= 0.0f)
 		{
-			timer = 4.0f;
+			timer = 3.0f;
 			GameObject dent = GameObject.Instantiate(Dent);
 			dent.transform.Rotate(0, 0, Random.Range(-20.0f, 20.0f));
 			dent.transform.parent = Langue.transform;
