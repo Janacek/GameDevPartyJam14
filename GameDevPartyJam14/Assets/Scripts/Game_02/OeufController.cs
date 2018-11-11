@@ -41,7 +41,7 @@ public class OeufController : MonoBehaviour
 				Vector3 directorVector = m_first - m_last;
 				//rb.AddForce(new Vector2(directorVector.x, 0));
 				Debug.Log(directorVector);
-				rb.velocity = new Vector2(directorVector.x / 20, rb.velocity.y);
+				rb.velocity = new Vector2(directorVector.x / 10, rb.velocity.y);
 				lc.Show(false);
 			}
 			if (Input.GetMouseButton(0))
