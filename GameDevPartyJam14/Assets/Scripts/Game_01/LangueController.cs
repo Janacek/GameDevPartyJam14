@@ -31,7 +31,6 @@ public class LangueController : MonoBehaviour
 
 	public void PlayerCollided()
 	{
-		Debug.Log("COUCOUC");
 		timer = 0.5f;
 	}
 

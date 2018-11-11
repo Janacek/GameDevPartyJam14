@@ -24,7 +24,7 @@ public class OvuleController : MonoBehaviour
 		// END GAME
 		if (t <= 0.0f)
 		{
-			SceneManager.LoadScene("Game_02");
+			SceneManager.LoadScene("Transition_1_2");
 		}
 	}
 

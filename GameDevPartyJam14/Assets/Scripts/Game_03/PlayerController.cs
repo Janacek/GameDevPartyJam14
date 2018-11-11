@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 		{
 			velocity.y = JumpForce;
 			jumping = true;
-			ps.PlayOneShot(0); // JUMP
+			//ps.PlayOneShot(0); // JUMP
 		}
 
 		velocity.x = speed;
@@ -104,11 +104,11 @@ public class PlayerController : MonoBehaviour
 		{
 			pi.Alive = false;
 			pi.CanMove = false;
-			ps.PlayOneShot(0); // DEATH
+			//ps.PlayOneShot(0); // DEATH
 		}
 		else if (collision.collider.tag == "BottomCollider")
 		{
-			ps.PlayOneShot(0); // TUD (Le perso se tappe la tête)
+			//ps.PlayOneShot(0); // TUD (Le perso se tappe la tête)
 		}
 	}
 

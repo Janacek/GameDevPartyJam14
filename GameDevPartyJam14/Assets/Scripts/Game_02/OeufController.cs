@@ -35,7 +35,7 @@ public class OeufController : MonoBehaviour
 			t -= Time.deltaTime;
 			if (t < 0.0f)
 			{
-				SceneManager.LoadScene("Game_03");
+				SceneManager.LoadScene("Transition_2_3");
 
 			}
 		}
