@@ -16,9 +16,9 @@ public class PlayerController : MonoBehaviour
 		sr = transform.Find("New Sprite").GetComponent<SpriteRenderer>();
 		originalPosition = transform.position;
 		Init();
-	}
+    }
 
-	void Init()
+    void Init()
 	{
 		speed = 0;
 		velocity = new Vector2();
@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 			}
 			return;
 		}
+
 
 		if (pi.CanMove == false && Input.GetAxis("Submit") > 0.5f)
 		{
@@ -64,7 +65,6 @@ public class PlayerController : MonoBehaviour
 		float horizontalMovement = Input.GetAxis("Horizontal");
 
 
-
 		if (horizontalMovement < -0.1f)
 		{
 			sr.flipX = true;
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetAxis("Jump") > 0.5f && jumping == false)
 		{
-			velocity.y += JumpForce;
+			velocity.y = JumpForce;
 			jumping = true;
 			ps.PlayOneShot(0); // JUMP
 		}
