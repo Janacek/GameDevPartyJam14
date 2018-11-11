@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScriptTrigger : MonoBehaviour
 {
-	List<float> Timers;
+	public List<float> Timers;
 	void Start()
 	{
 		audioSource = GetComponent<AudioSource>();
@@ -16,9 +16,13 @@ public class ScriptTrigger : MonoBehaviour
 		timer += Time.deltaTime;
 		if (nbr < Timers.Count && timer >= Timers[nbr])
 		{
+			Debug.Log("Coucou");
 			tm.PlayEvent(nbr);
+			++nbr;
 		}
 	}
+
+	bool play = true;
 
 	int nbr = 0;
 	float timer = 0.0F;
