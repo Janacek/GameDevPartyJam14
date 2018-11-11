@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetAxis("Jump") > 0.5f && jumping == false)
 		{
-			velocity.y += JumpForce;
+			velocity.y = JumpForce;
 			jumping = true;
 			ps.PlayOneShot(0); // JUMP
 		}
