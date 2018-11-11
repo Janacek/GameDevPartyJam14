@@ -18,6 +18,7 @@ public class FakeSpermosController : MonoBehaviour
 	private void FixedUpdate()
 	{
 		timer -= Time.fixedDeltaTime;
+		gtimer -= Time.fixedDeltaTime;
 
 		if (timer > 0.0f)
 		{
@@ -27,7 +28,13 @@ public class FakeSpermosController : MonoBehaviour
 		{
 			transform.Rotate(-5 * Time.fixedDeltaTime, 0, 0);
 		}
+
+		if (gtimer <= 0.0f)
+		{
+			Destroy(this.gameObject);
+		}
 	}
 
 	float timer = 3.5f;
+	float gtimer = 7.0f;
 }

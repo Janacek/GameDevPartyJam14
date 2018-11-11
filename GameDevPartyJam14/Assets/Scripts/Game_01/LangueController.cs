@@ -18,7 +18,22 @@ public class LangueController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		transform.Rotate(-Speed * Time.fixedDeltaTime, 0, 0);
+		timer -= Time.deltaTime;
+		if (timer <= 0.0f)
+		{
+			transform.Rotate(-Speed * Time.fixedDeltaTime, 0, 0);
+		}
+		else
+		{
+			transform.Rotate(Speed * Time.fixedDeltaTime, 0, 0);
+		}
 	}
 
+	public void PlayerCollided()
+	{
+		Debug.Log("COUCOUC");
+		timer = 0.5f;
+	}
+
+	float timer = 0.0f;
 }

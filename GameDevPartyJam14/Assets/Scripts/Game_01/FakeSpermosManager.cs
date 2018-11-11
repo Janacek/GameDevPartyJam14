@@ -20,7 +20,6 @@ public class FakeSpermosManager : MonoBehaviour
 			timer = 1.0f;
 			GameObject fakeSpermos = GameObject.Instantiate(FakeSpermos);
 			fakeSpermos.transform.Rotate(0, 0, Random.Range(-20.0f, 20.0f));
-			Debug.Log(fakeSpermos.transform.rotation);
 		}
 	}
 

@@ -12,7 +12,7 @@ public class Dent : MonoBehaviour
 
 	void Update()
 	{
-		transform.Rotate(-Speed * Time.fixedDeltaTime, 0, 0);
+		//transform.Rotate(-Speed * Time.fixedDeltaTime, 0, 0);
 		timer -= Time.deltaTime;
 		if (timer <= 0.0f)
 		{

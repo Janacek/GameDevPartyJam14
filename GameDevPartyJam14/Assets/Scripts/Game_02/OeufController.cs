@@ -5,6 +5,9 @@ using UnityEngine;
 public class OeufController : MonoBehaviour
 {
 
+	public GameObject Entree;
+	public GameObject Sortie;
+
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
@@ -14,7 +17,17 @@ public class OeufController : MonoBehaviour
 
 	void Update()
 	{
-		if (oi.CanThrow)
+		if (endTimer > 0.0f)
+		{
+			endTimer -= Time.deltaTime;
+		}
+		if (endTimer < 0.0f)
+		{
+			GetComponent<CircleCollider2D>().enabled = false;
+			Sortie.SetActive(true);
+		}
+
+			if (oi.CanThrow)
 		{
 			if (Input.GetMouseButtonDown(0))
 			{
@@ -58,16 +71,28 @@ public class OeufController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		Vector3 pos = transform.position;
-		pos.z = Camera.main.transform.position.z;
+		if (endTimer >= 0.0f)
+		{
+			Vector3 pos = transform.position;
+			pos.z = Camera.main.transform.position.z;
 
 
-		Camera.main.transform.position = pos;
+			Camera.main.transform.position = pos;
+		}
+	}
+
+	public void End()
+	{
+		oi.CanThrow = false;
+		endTimer = 3.0f;
+		Entree.SetActive(true);
 	}
 
 	Rigidbody2D rb;
 	OeufInformations oi;
 	LineController lc;
+
+	float endTimer = 0.0f;
 
 	private Vector3 m_first = new Vector3();
 	private Vector3 m_last = new Vector3();

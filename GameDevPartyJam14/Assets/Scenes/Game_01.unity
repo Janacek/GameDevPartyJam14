@@ -822,6 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271da99f1b557a04fb97920f7cbb8fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Langue: {fileID: 1204861741}
   Dent: {fileID: 1892049837663080, guid: 2daa581449c2d054d9503ddd6d275ef2, type: 2}
 --- !u!4 &563102559
 Transform:
@@ -1726,6 +1727,11 @@ Prefab:
       value: 
       objectReference: {fileID: 563102558}
     - target: {fileID: 114691844618205058, guid: b0742b45a7ee77e46af4249481526c4b,
+        type: 2}
+      propertyPath: lc
+      value: 
+      objectReference: {fileID: 1204861746}
+    - target: {fileID: 114696096394485520, guid: b0742b45a7ee77e46af4249481526c4b,
         type: 2}
       propertyPath: lc
       value: 

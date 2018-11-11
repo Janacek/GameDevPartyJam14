@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DentManager : MonoBehaviour
 {
+	public GameObject Langue;
 	public GameObject Dent;
 
 	void Start()
@@ -18,9 +19,10 @@ public class DentManager : MonoBehaviour
 
 		if (timer <= 0.0f)
 		{
-			timer = 5.0f;
+			timer = 4.0f;
 			GameObject dent = GameObject.Instantiate(Dent);
 			dent.transform.Rotate(0, 0, Random.Range(-20.0f, 20.0f));
+			dent.transform.parent = Langue.transform;
 		}
 	}
 

@@ -18,7 +18,7 @@ public class SpermosCollider : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Coucou");
+		lc.PlayerCollided();
 	}
 
 }
